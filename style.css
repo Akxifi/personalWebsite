@@ -1,0 +1,44 @@
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+li {
+    border-bottom: 1px solid goldenrod;
+    display: inline;
+    float: right;
+    padding: 4px;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: goldenrod;
+}
+.active {
+    background-color: goldenrod;
+}
+
+body {background-color: black; font-family: arial;}
+h1 {text-align: center; color: white;}
+p {color: white;}
+
+.footer {
+    background-color: rgb(10, 10, 10);
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
