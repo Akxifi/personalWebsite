@@ -5,14 +5,14 @@ const width = canvas.width;
 const height = canvas.height;
 
 const grid = [];
-const colorGrid = []; // Array to store colors for each sand particle
+const colorGrid = []; 
 
 for (let i = 0; i < height; i++) {
     grid[i] = [];
     colorGrid[i] = [];
     for (let j = 0; j < width; j++) {
-        grid[i][j] = 0; // 0 represents an empty cell, 1 represents sand
-        colorGrid[i][j] = null; // To store color of sand
+        grid[i][j] = 0; 
+        colorGrid[i][j] = null; 
     }
 }
 

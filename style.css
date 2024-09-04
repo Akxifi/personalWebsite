@@ -34,7 +34,14 @@ a:hover {
 
 body {background-color: black; font-family: arial;}
 h1 {text-align: center; color: white;}
-p {color: white;}
+p {color: white; text-align: center;}
+html {scroll-behavior: smooth;}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .footer {
     background-color: rgb(10, 10, 10);
