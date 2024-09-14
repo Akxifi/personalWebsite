@@ -37,11 +37,103 @@ h1 {text-align: center; color: white;}
 p {color: white; text-align: center;}
 html {scroll-behavior: smooth;}
 
-.canvas-container {
+.canvas-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.canvas-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.canvas-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.canvas-wrapper {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
+canvas {
+    border: 2px solid #999;
+    border-radius: 10px;
+    background-color: black;
+}
+
+
+
+.controls button:hover {
+    background-color: #e68900;
+}
+
+
+#covid-stats {
+    text-align: center;
+    color: white;
+
+}
+.covid-stats h3{
+    text-align: center;
+    color: white;
+}
+
+.cat-fact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cat-fact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.cat-fact-content {
+    padding: 10px;
+}
+
+.fact-button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fact-button:hover {
+    background-color: #e68900;
+}
+
+
+
 
 .footer {
     background-color: rgb(10, 10, 10);

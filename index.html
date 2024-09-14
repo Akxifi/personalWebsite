@@ -1,70 +1,96 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Juan Rodriguez</title>
+</head>
+
+<body>
+    <!--Header-->
+    <h1>Juan Rodriguez Rodriguez</h1>
+    <h5 style="color: goldenrod; text-align: center;">Computer Science || Customer Service</h5>
+
+    <!--Menu-->
+    <ul>
+        <li style="float: left; color: goldenrod; background-color: black;">Juan Rodriguez</li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="">Accreditations</a></h3></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+
+
+
+    <!--Main Content-->
+    <p style="text-align: justify;">Hello, this is Juan Rodriguez. 
+        A computer science graduate from Interamerican University with a passion for technology and problem solving.
+        My journey in the tech world has led me through roles as a web designer, helpdesk technician, free lancing programmer & a customer service professional.
+        Now I'm challenging my skills and knowledge into growing within the IT and cybersecurity fields.
+    </p>
+
+
+        
+    <!--Project Section-->
+    <div class="canvas-container">
+        <p>Colored Sand Simulator<br>(Mouse Drag) </p>
+        <canvas id="myCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
+    </div>
+
+
+    <div class="canvas-container">
+        <p>Visual Sorting Simulator</p>
+        <canvas id="sortCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
+    </div>
+
+
+
+    <!--API Testing-->
+
+    <div class="cat-fact-container">
+        <h2>Random Cat Fact</h2>
+        <div class="cat-fact-card">
+            <div class="cat-fact-content">
+                <p id="cat-fact" style="color: black;"></p>
+            </div>
+        </div>
+        <button id="new-fact" class="fact-button">Get Another Cat Fact</button>
+    </div>
     
-    <head>
-        
-        <link rel="stylesheet" href="style.css">
-        <title>Juan Rodriguez</title>
+    <br>
 
-    </head>
-
-    <body>
-        <!--Header-->
-        <h1>Juan Rodriguez Rodriguez</h1>
-        <h5 style="color: goldenrod; text-align: center;">Computer Science || Customer Service</h5>
-
-        <!--Menu-->
-        <ul>
-            <li style="float: left; color: goldenrod; background-color: black;">Juan Rodriguez</li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="">Accreditations</a></h3></li>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-
-        <!--Main paragraph-->
-        <p style="text-align: justify;">Hello, this is Juan Rodriguez. 
-            A computer science graduate from Interamerican University with a passion for technology and problem solving.
-            My journey in the tech world has led me through roles as a web designer, helpdesk technician, free lancing programmer & a customer service professional.
-            Now I'm challenging my skills and knowledge into growing within the IT and cybersecurity fields.
-        </p>
-        
-
-        <!--Testing-->
+    <div id="weather" style="text-align: center; color: white;"></div>
+    <br>
 
 
-        <div class="canvas-container">
+    <canvas id="covidChart" width="400" height="200"></canvas>
 
-            <p>Colored Sand Simulator (Mouse Drag) </p>
-            <canvas id="myCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
 
-        </div>
 
-        <div class="canvas-container">
-
-            <p>Visual Bubble Sorting Simulator</p>
-            <canvas id="sortCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
-
-        </div>
         
         
-        <!--Testing-->
-
+        
+    <!--Link Section-->
+    <div style="text-align: center;">
         <a href="https://julian98uk.wixstudio.io/linguistichorizon">Current Internship Proyect</a><br>
         <a href="https://github.com/akxifi">Personal GitHub Page</a><br>
-
-
-        <!--Footer-->
-    <div class = "footer" id="contact">
-        <p style="color: goldenrod; "><u>Contact Me:</u><br>
-            Mon - Fri: 8:00AM - 5:00PM
-        <p>
-            <a href="JuanRodriguezResume.pdf" download="JuanRodriguezResume">Resume.pdf</a><br>
-            Phone Number: 939-366-4884<br>
-            <a href="mailto:julian98uk@gmail.com">E-mail: Julian98uk@gmail.com</a><br>
-            
     </div>
+    
+        <!--Footer-->
+    <div id="contact" class = "footer" id="contact">
+        <p style="color: goldenrod; "><u>Contact Me:</u><br>
+            Mon - Sat: 8:00AM - 5:00PM<p>
+
+        <a href="JuanRodriguezResume.pdf" download="JuanRodriguezResume">Resume.pdf</a><br>
+        Phone Number: 939-366-4884<br>
+        <a href="mailto:julian98uk@gmail.com">E-mail: Julian98uk@gmail.com</a><br>   
+    </div>
+
 
     <script src="fallingSand.js"></script>
     <script src="visualSorting.js"></script>
-    </body>
+    <script src="catAPI.js"></script>
+    <script src="weather.js"></script>
+    <script src="covid19StatsApi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
 </html>
