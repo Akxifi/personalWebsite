@@ -2,51 +2,63 @@
 <html lang="en-US">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Juan Rodriguez</title>
 </head>
 
 <body>
     <!--Header-->
     <h1>Juan Rodriguez Rodriguez</h1>
-    <h5 style="color: goldenrod; text-align: center;">Computer Science || Customer Service</h5>
+    <h5 style="color: goldenrod; text-align: center;">Computer Science || Generator & Inverters || Customer Service</h5>
 
     <!--Menu-->
     <ul>
         <li style="float: left; color: goldenrod; background-color: black;">Juan Rodriguez</li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="">Accreditations</a></h3></li>
+        <li><a href="accreditations.html">Accreditations</a></h3></li>
         <li><a href="index.html">Home</a></li>
     </ul>
 
 
 
     <!--Main Content-->
-    <p style="text-align: justify;">Hello, this is Juan Rodriguez. 
+    <h1>About Me</h1>
+
+    <p style="text-align: justify;">Hello, My name is Juan Rodriguez. 
         A computer science graduate from Interamerican University with a passion for technology and problem solving.
         My journey in the tech world has led me through roles as a web designer, helpdesk technician, free lancing programmer & a customer service professional.
-        Now I'm challenging my skills and knowledge into growing within the IT and cybersecurity fields.
+        Now I'm challenging my skills and knowledge into growing within the IT and cybersecurity fields. I am skilled in multiple programming languages, including 
+        Java, C++, Python, JavaScript, HTML, and CSS, with hands-on experience in building this website entirely by hand. My proficiency in these languages showcases 
+        my adaptability and commitment to software development. I'm also eager and open to learning any other programming languages to expand my expertise and stay current 
+        in the evolving tech landscape.
+    <br><br>
+        As you continue down the page, you'll see a few examples of my work as a website desginer, API integration, programming skills and how to contact me. 
+        The sand falling simulation demonstrates the basic effects of gravity with a two-dimensional array, while the sorting simulator visualizes a sorting algorithm in action. Then it's the Cat Fact, 
+        Weather & COVID-19 Statistic API's. 
     </p>
-
-
         
     <!--Project Section-->
-    <div class="canvas-container">
-        <p>Colored Sand Simulator<br>(Mouse Drag) </p>
-        <canvas id="myCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
+    <div class="centered">
+        <div class="canvas-container">
+            <p>Colored Sand Simulator<br>(Mouse Drag) </p>
+            <canvas id="myCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
+        </div>
     </div>
 
-
-    <div class="canvas-container">
-        <p>Visual Sorting Simulator</p>
-        <canvas id="sortCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
+    <div class="centered">
+        <div class="canvas-container">
+            <p>Visual Sorting Simulator</p>
+            <canvas id="sortCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
+        </div>
     </div>
+    <br>
 
 
 
-    <!--API Testing-->
+    <!--API Section-->
 
     <div class="cat-fact-container">
-        <h2>Random Cat Fact</h2>
+        <h2>Random Cat Fact API</h2>
         <div class="cat-fact-card">
             <div class="cat-fact-content">
                 <p id="cat-fact" style="color: black;"></p>
@@ -54,25 +66,41 @@
         </div>
         <button id="new-fact" class="fact-button">Get Another Cat Fact</button>
     </div>
-    
-    <br>
 
-    <div id="weather" style="text-align: center; color: white;"></div>
+    <div class="weather-container">
+        <div class="weather-card">
+            <h3 id="city-name">City Name</h3>
+            <div class="weather-info">
+                <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon">
+                <div>
+                    <p id="temperature">--°F</p>
+                    <p id="weather-description">Weather Description</p>
+                </div>
+            </div>
+        </div>
+    </div>    
     <br>
 
 
     <canvas id="covidChart" width="400" height="200"></canvas>
+    <br>
 
 
 
         
         
         
-    <!--Link Section-->
-    <div style="text-align: center;">
-        <a href="https://julian98uk.wixstudio.io/linguistichorizon">Current Internship Proyect</a><br>
-        <a href="https://github.com/akxifi">Personal GitHub Page</a><br>
-    </div>
+<!-- Link Section with Icons -->
+<div class="link-section-icons">
+    <a href="https://julian98uk.wixstudio.io/linguistichorizon" target="_blank" class="icon-link">
+        <i class="fas fa-briefcase"></i> Internship Project
+    </a>
+    <a href="https://github.com/akxifi" target="_blank" class="icon-link">
+        <i class="fab fa-github"></i> GitHub Portfolio
+    </a>
+</div>
+<br>
+
     
         <!--Footer-->
     <div id="contact" class = "footer" id="contact">

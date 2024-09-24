@@ -7,7 +7,11 @@ fetch(url)
     .then(data => {
         const temperature = data.main.temp;
         const weatherDescription = data.weather[0].description;
-        document.getElementById('weather').innerHTML =
-            `current weather in ${city}: ${temperature}°farenheit, ${weatherDescription}`;
+        const iconCode = data.weather[0].icon;
+
+        document.getElementById('city-name').textContent = city;
+        document.getElementById('temperature').textContent = `${temperature}°F`;
+        document.getElementById('weather-description').textContent = weatherDescription;
+        document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${iconCode}.png`;
     })
-    .catch(error => console.error('Error fetcvhing weather data', error));
+    .catch(error => console.error('Error fetching weather data', error));
