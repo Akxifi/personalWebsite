@@ -12,7 +12,7 @@ function initializeLines() {
     lineLengths = []; 
     sortCtx.clearRect(0, 0, sortCanvas.width, sortCanvas.height);
 
-    for (let i = 0; i < 132; i++) {
+    for (let i = 0; i < 266; i++) {
         lineLengths.push(getRandomInt(sortCanvas.height));
     }
     drawLines();
@@ -45,7 +45,7 @@ function bubbleSort() {
 
     let n = lineLengths.length;
     let swapped;
-    let delay = 10; 
+    let delay = 4; 
 
     function sortStep(i, end) {
         if (i < end - 1) {
