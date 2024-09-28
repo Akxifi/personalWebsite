@@ -45,7 +45,7 @@ function bubbleSort() {
 
     let n = lineLengths.length;
     let swapped;
-    let delay = 4; 
+    let delay = 1; 
 
     function sortStep(i, end) {
         if (i < end - 1) {
