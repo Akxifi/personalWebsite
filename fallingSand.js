@@ -34,15 +34,21 @@ function drawGrid() {
     }
 }
 
-// Update the grid to simulate the falling sand
+// Update the grid to simulate faster falling sand
 function updateGrid() {
-    for (let i = height - 2; i >= 0; i--) { 
-        for (let j = 0; j < width; j++) {
-            if (grid[i][j] === 1 && grid[i + 1][j] === 0) { 
-                grid[i + 1][j] = 1; 
-                colorGrid[i + 1][j] = colorGrid[i][j]; 
-                grid[i][j] = 0; 
-                colorGrid[i][j] = null; 
+    const steps = 2; // Number of steps the sand will move per update (increase for faster fall)
+
+    for (let step = 0; step < steps; step++) {
+        // Iterate through the grid from bottom to top to move the sand down
+        for (let i = height - 2; i >= 0; i--) {
+            for (let j = 0; j < width; j++) {
+                if (grid[i][j] === 1 && grid[i + 1][j] === 0) {
+                    // Move the sand particle down
+                    grid[i + 1][j] = 1;
+                    colorGrid[i + 1][j] = colorGrid[i][j];
+                    grid[i][j] = 0;
+                    colorGrid[i][j] = null;
+                }
             }
         }
     }
