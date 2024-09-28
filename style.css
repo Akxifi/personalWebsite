@@ -2,32 +2,53 @@
     GLOBAL STYLES
 ======================*/
 body {
-    background-color: black;
+    background-color: white;
     font-family: Arial;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Make sure the body takes the full viewport height */
-    margin: 0; /* Remove default margin */
+    margin: auto; /* Remove default margin */
 }
 html {
     scroll-behavior: smooth;
 }
 h1 {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: white;
     margin: 10px 0;
 }
 h5 {
+    font-family: Arial;
     margin: 10px 0;
 }
 p {
-    color: white;
+    color: black;
     text-align: center;
 }
 .centered {
     justify-content: center;
     display: flex;
 }
+.header-div {
+    background-color: rgb(17, 46, 35);
+    background: linear-gradient(-45deg, white, rgb(17, 46, 35), rgb(17, 46, 35));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 /*=====================
     NAVIGATION BAR
@@ -38,13 +59,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(17, 46, 35);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 li {
-    border-bottom: 1px solid goldenrod;
+    border-bottom: 1px solid;
     display: inline;
     float: right;
     padding: 4px;
@@ -56,10 +77,10 @@ a:link, a:visited {
 a:hover {
     color: white;
     text-decoration: underline;
-    background-color: goldenrod;
+    background-color: rgb(15, 90, 68);
 }
 .active {
-    background-color: goldenrod;
+    background-color: white;
 }
 
 /*=====================
@@ -105,7 +126,7 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    color: white;
+    color: black;
     max-width: 300px;
 }
 .weather-card h3 {
@@ -135,7 +156,7 @@ a:hover {
     CANVAS SECTION
 ======================*/
 .canvas-section {
-    background-color: #f9f9f9;
+    background-color: black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -226,7 +247,7 @@ canvas {
     FOOTER STYLES
 ======================*/
 .footer {
-    background-color: rgb(10, 10, 10);
+    background-color: black;
     padding: 10px; /* Adjust padding as needed */
     text-align: center;
     color: white;
@@ -283,3 +304,5 @@ canvas {
 .view-button:hover {
     background-color: #e68900;
 }
+
+

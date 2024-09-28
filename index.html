@@ -7,24 +7,26 @@
 </head>
 
 <body>
+
     <!--Header-->
-    <h1>Juan Rodriguez Rodriguez</h1>
-    <h5 style="color: goldenrod; text-align: center;">Computer Science || Generator & Inverters || Customer Service</h5>
+    <div class="header-div">
+        <h1>Juan Rodriguez Rodriguez</h1>
+        <h5 style="color: white; text-align: center;">Computer Science || Generator & Inverters || Customer Service</h5>
+    </div>
 
     <!--Menu-->
-    <ul>
-        <li style="float: left; color: goldenrod; background-color: black;">Juan Rodriguez</li>
+    <ul style="background-color: black;">
+        <li style="float: left; color: white;">Juan Rodriguez</li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="accreditations.html">Accreditations</a></h3></li>
+        <li><a href="accreditations.html">Accreditations</a></li>
         <li><a href="index.html">Home</a></li>
     </ul>
 
 
-
     <!--Main Content-->
-    <h1>About Me</h1>
+    <h1 style="color: rgb(17, 46, 35);">About Me</h1>
 
-    <p style="text-align: justify;">Hello, My name is Juan Rodriguez. 
+    <p style="text-align: centered;">Hello, My name is Juan Rodriguez. 
         A computer science graduate from Interamerican University with a passion for technology and problem solving.
         My journey in the tech world has led me through roles as a web designer, helpdesk technician, free lancing programmer & a customer service professional.
         Now I'm challenging my skills and knowledge into growing within the IT and cybersecurity fields. I am skilled in multiple programming languages, including 
@@ -38,16 +40,20 @@
     </p>
         
     <!--Project Section-->
+    <h1 style="color: rgb(17, 46, 35);">Projects</h1>
+
     <div class="centered">
         <div class="canvas-container">
-            <p>Colored Sand Simulator<br>(Mouse Drag) </p>
+            <p style="background-color: black; color: white;">Colored Sand Simulator<br>(Mouse Drag) </p>
+            <button id="resetSand">Clear</button>
             <canvas id="myCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
         </div>
     </div>
 
     <div class="centered">
         <div class="canvas-container">
-            <p>Visual Sorting Simulator</p>
+            <p style="background-color: black; color: white;">Visual Sorting Simulator</p>
+            <button id="resetSort">Reset</button>
             <canvas id="sortCanvas" width="400" height="200" style="border: 1px solid white;"></canvas>
         </div>
     </div>
@@ -56,6 +62,7 @@
 
 
     <!--API Section-->
+    <h1 style="color: rgb(17, 46, 35);">API Intergration</h1>
 
     <div class="cat-fact-container">
         <h2>Random Cat Fact API</h2>
@@ -82,33 +89,34 @@
     <br>
 
 
-    <canvas id="covidChart" width="400" height="200"></canvas>
+    <canvas id="covidChart" width="400" height="100"></canvas>
     <br>
 
 
-
+    
         
-        
-        
-<!-- Link Section with Icons -->
-<div class="link-section-icons">
-    <a href="https://julian98uk.wixstudio.io/linguistichorizon" target="_blank" class="icon-link">
-        <i class="fas fa-briefcase"></i> Internship Project
-    </a>
-    <a href="https://github.com/akxifi" target="_blank" class="icon-link">
-        <i class="fab fa-github"></i> GitHub Portfolio
-    </a>
-</div>
-<br>
+    <!-- Link Section with Icons -->
+    <div class="link-section-icons">
+        <a href="https://julian98uk.wixstudio.io/linguistichorizon" target="_blank" class="icon-link">
+            <i class="fas fa-briefcase"></i> Internship Project
+        </a>
+        <a href="https://github.com/akxifi" target="_blank" class="icon-link">
+            <i class="fab fa-github"></i> GitHub Portfolio
+        </a>
+    </div>
+    <br>
 
     
-        <!--Footer-->
+    <!--Footer-->
     <div id="contact" class = "footer" id="contact">
-        <p style="color: goldenrod; "><u>Contact Me:</u><br>
-            Mon - Sat: 8:00AM - 5:00PM<p>
+        <p style="color: goldenrod; ">Contact Me:
+        <br>
+        <u>Mon - Sat: 8:00AM - 5:00PM</u></p>
 
-        <a href="JuanRodriguezResume.pdf" download="JuanRodriguezResume">Resume.pdf</a><br>
-        Phone Number: 939-366-4884<br>
+        <a href="./documents/JUAN RODRIGUEZ RODRIGUEZ.pdf" target="_blank" >Resume.pdf</a>
+        <br>
+        Phone Number: 939-366-4884
+        <br>
         <a href="mailto:julian98uk@gmail.com">E-mail: Julian98uk@gmail.com</a><br>   
     </div>
 

@@ -1,5 +1,6 @@
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
+const sandReset = document.getElementById('resetSand'); // Use document instead of canvas
 
 const width = canvas.width;
 const height = canvas.height;
@@ -19,40 +20,38 @@ for (let i = 0; i < height; i++) {
 let isDragging = false;
 
 function drawGrid() {
-    ctx.clearRect(0, 0, width, height); // Clear the canvas
+    ctx.clearRect(0, 0, width, height); 
 
     for (let i = 0; i < height; i++) {
         for (let j = 0; j < width; j++) {
             if (grid[i][j] === 1) {
                 ctx.fillStyle = colorGrid[i][j];
-                ctx.fillRect(j, i, 1, 1); // Draw a single pixel of sand
+                ctx.fillRect(j, i, 1, 1);
             }
         }
     }
 }
 
 function updateGrid() {
-    for (let i = height - 2; i >= 0; i--) { // Start from the second-last row
+    for (let i = height - 2; i >= 0; i--) { 
         for (let j = 0; j < width; j++) {
-            if (grid[i][j] === 1 && grid[i + 1][j] === 0) { // If there's sand and the cell below is empty
-                grid[i + 1][j] = 1; // Move the sand down
-                colorGrid[i + 1][j] = colorGrid[i][j]; // Move the color down
-                grid[i][j] = 0; // Empty the current cell
-                colorGrid[i][j] = null; // Clear the color
+            if (grid[i][j] === 1 && grid[i + 1][j] === 0) { 
+                grid[i + 1][j] = 1; 
+                colorGrid[i + 1][j] = colorGrid[i][j]; 
+                grid[i][j] = 0; 
+                colorGrid[i][j] = null; 
             }
         }
     }
 }
 
 function addSand(x, y) {
-    // Round the coordinates to ensure they are valid array indices
     x = Math.round(x);
     y = Math.round(y);
 
-    // Check if the coordinates are within bounds
     if (x >= 0 && x < width && y >= 0 && y < height) {
-        grid[y][x] = 1; // Add sand at the position
-        colorGrid[y][x] = `hsl(${(y + x) % 360}, 100%, 50%)`; // Calculate color based on position
+        grid[y][x] = 1; 
+        colorGrid[y][x] = `hsl(${(y + x) % 360}, 100%, 50%)`; 
     }
 }
 
@@ -107,7 +106,24 @@ canvas.addEventListener('touchmove', handleTouchEvent);
 function gameLoop() {
     updateGrid();
     drawGrid();
-    requestAnimationFrame(gameLoop); // Keep the loop going
+    requestAnimationFrame(gameLoop);
 }
 
-gameLoop(); // Start the game loop
+function resetCanvas() {
+    // Clear the grid and colorGrid arrays
+    for (let i = 0; i < height; i++) {
+        for (let j = 0; j < width; j++) {
+            grid[i][j] = 0;
+            colorGrid[i][j] = null;
+        }
+    }
+
+    // Clear the canvas
+    ctx.clearRect(0, 0, width, height);
+}
+
+// Attach the reset function to the reset button
+sandReset.addEventListener('click', resetCanvas);
+
+// Start the game loop
+gameLoop();
