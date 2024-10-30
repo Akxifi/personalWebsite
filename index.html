@@ -42,22 +42,46 @@
     <!--Project Section-->
     <h1 style="color: rgb(17, 46, 35);">Projects</h1>
 
-    <div class="centered">
-        <div class="canvas-container">
-            <p style="background-color: black; color: white;">Colored Sand Simulator<br>(Mouse Drag) </p>
-            <button id="resetSand">Clear</button>
-            <canvas id="myCanvas" width="800" height="300" style="border: 1px solid white;"></canvas>
-        </div>
-    </div>
+    <div class = "centered">
+        <div class = "login-container">
+            <h2>Login Form</h2>
 
-    <div class="centered">
-        <div class="canvas-container">
-            <p style="background-color: black; color: white;">Visual Sorting Simulator</p>
-            <button id="resetSort">Reset</button>
-            <canvas id="sortCanvas" width="800" height="300" style="border: 1px solid white;"></canvas>
+            <form>
+                <input type="text" placeholder="Email" name="uname" required>
+                <br>
+                <input type="password" placeholder="Password" name="psw" required>
+                <br>
+                <a href="">Forgot Password?</a>
+                <br><br>
+                <button type="submit">Login</button>
+                <br>
+                <label>Don't have an account?</label>
+                <a href=""><u>Sign Up</u></a>
+              </form>
         </div>
     </div>
     <br>
+
+    <div class="centered">
+        <div class="canvas-container">
+            <p class="canvas-title">Colored Sand Simulator<br>(Mouse Drag)</p>
+            <button id="resetSand" class="control-button">Clear</button>
+            <canvas id="myCanvas" width="800" height="300"></canvas>
+        </div>
+    </div>
+    
+    <div class="centered">
+        <div class="canvas-container">
+            <p class="canvas-title">Visual Sorting Simulator</p>
+            <button id="resetSort" class="control-button">Reset</button>
+            <canvas id="sortCanvas" width="800" height="300"></canvas>
+        </div>
+    </div>
+    
+
+
+
+
 
 
 

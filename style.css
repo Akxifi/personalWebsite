@@ -25,6 +25,8 @@ h5 {
 p {
     color: black;
     text-align: center;
+    font-family: Arial;
+    padding: 5px 15px;
 }
 .centered {
     justify-content: center;
@@ -114,6 +116,68 @@ a:hover {
 }
 
 /*=====================
+    LOGIN SECTION
+======================*/
+.login-container {
+    display: center;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e68900;
+    h2 {
+        color: white;
+    }
+    label {
+        color: white;
+    }
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%; /* Makes the input fields take the full width of .login-container */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b; /* Teal color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: scale(1.03);
+}
+
+.login-container button:active {
+    background-color: #00332a; /* Even darker teal on click */
+    transform: scale(0.98);
+}
+
+
+
+
+
+/*=====================
     WEATHER SECTION
 ======================*/
 .weather-container {
@@ -156,40 +220,69 @@ a:hover {
 /*=====================
     CANVAS SECTION
 ======================*/
-.canvas-section {
-    background-color: black;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: 20px auto;
-    max-width: 600px;
-}
-.canvas-section h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-.canvas-section p {
-    font-size: 16px;
-    color: #666;
-}
-.canvas-wrapper {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 15px 0;
+/* Container to center all items */
+.centered {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
+
+/* Main styling for the canvas container */
+.canvas-container {
+    background-color: #333; /* Dark gray for a modern look */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Title styling */
+.canvas-title {
+    background-color: #222;
+    color: #e68900; /* Matching accent color */
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Button styling */
+.control-button {
+    background-color: #e68900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 15px;
+}
+
+.control-button:hover {
+    background-color: #cc7300; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+.control-button:active {
+    background-color: #b26500; /* Even darker on click */
+    transform: scale(0.95); /* Slightly shrink */
+}
+
+/* Canvas styling */
 canvas {
-    border: 2px solid #999;
+    border: 2px solid #e68900; /* Matching accent color */
     border-radius: 10px;
     background-color: black;
+    display: block;
+    margin: 0 auto;
 }
-.controls button:hover {
-    background-color: #e68900;
-}
+
 
 /*=====================
     COVID STATS SECTION
